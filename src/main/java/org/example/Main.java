@@ -52,18 +52,35 @@ public class Main {
 //        System.out.println("List after removing index: " + objectives);
 
         // Exercise 4: Searching the List (`contains` and `indexOf`)
-        ArrayList<String> waypoints = new ArrayList<>();
-        waypoints.add("Alpha");
-        waypoints.add("Bravo");
-        waypoints.add("Charlie");
+//        ArrayList<String> waypoints = new ArrayList<>();
+//        waypoints.add("Alpha");
+//        waypoints.add("Bravo");
+//        waypoints.add("Charlie");
+//
+//        boolean hasBravo = waypoints.contains("Bravo");
+//        System.out.println("Does the list contain Bravo? " + hasBravo);
+//
+//        int indexOfCharlie = waypoints.indexOf("Charlie");
+//        System.out.println("Index of 'Charlie': " + indexOfCharlie);
+//
+//        int indexOfDelta = waypoints.indexOf("Delta");
+//        System.out.println("Index of 'Delta': " + indexOfDelta);
 
-        boolean hasBravo = waypoints.contains("Bravo");
-        System.out.println("Does the list contain Bravo? " + hasBravo);
+        // Exercise 5: Iterating Through the List
+        ArrayList<String> squad = new ArrayList<>();
+        squad.add("Leader");
+        squad.add("Medic");
+        squad.add("Engineer");
+        squad.add("Scout");
 
-        int indexOfCharlie = waypoints.indexOf("Charlie");
-        System.out.println("Index of 'Charlie': " + indexOfCharlie);
+        System.out.println("--- Using an Enhanced For-Loop ---");
+        for (String role : squad) {
+            System.out.println("Role: " + role);
+        }
 
-        int indexOfDelta = waypoints.indexOf("Delta");
-        System.out.println("Index of 'Delta': " + indexOfDelta);
+        System.out.println("\n--- Using a Standard For-Loop with index ---");
+        for (int i = 0; i < squad.size(); i++) {
+            System.out.println("Role at index " + i + ": " + squad.get(i));
+        }
     }
 }
