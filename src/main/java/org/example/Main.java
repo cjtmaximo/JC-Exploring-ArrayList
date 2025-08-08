@@ -34,22 +34,36 @@ public class Main {
 //        System.out.println("List after modification: " + equipment);
 
         // Exercise 3: Inserting and Removing Elements (`add` at index and `remove`)
-        ArrayList<String> objectives = new ArrayList<>();
-        objectives.add("Primary Objective");
-        objectives.add("Tertiary Objective");
+//        ArrayList<String> objectives = new ArrayList<>();
+//        objectives.add("Primary Objective");
+//        objectives.add("Tertiary Objective");
+//
+//        // Insert a new objective at index 1
+//        objectives.add(1, "Secondary Objective");
+//        System.out.println("List after insertion: " + objectives);
+//
+//        // Remove the objective at index 2
+//        String removedObjective = objectives.remove(2);
+//        System.out.println("Removed objective: " + removedObjective);
+//        System.out.println("List after removing index: " + objectives);
+//
+//        // Remove a specific objective by its value
+//        objectives.remove("Primary Objective");
+//        System.out.println("List after removing index: " + objectives);
 
-        // Insert a new objective at index 1
-        objectives.add(1, "Secondary Objective");
-        System.out.println("List after insertion: " + objectives);
+        // Exercise 4: Searching the List (`contains` and `indexOf`)
+        ArrayList<String> waypoints = new ArrayList<>();
+        waypoints.add("Alpha");
+        waypoints.add("Bravo");
+        waypoints.add("Charlie");
 
-        // Remove the objective at index 2
-        String removedObjective = objectives.remove(2);
-        System.out.println("Removed objective: " + removedObjective);
-        System.out.println("List after removing index: " + objectives);
+        boolean hasBravo = waypoints.contains("Bravo");
+        System.out.println("Does the list contain Bravo? " + hasBravo);
 
-        // Remove a specific objective by its value
-        objectives.remove("Primary Objective");
-        System.out.println("List after removing index: " + objectives);
+        int indexOfCharlie = waypoints.indexOf("Charlie");
+        System.out.println("Index of 'Charlie': " + indexOfCharlie);
 
+        int indexOfDelta = waypoints.indexOf("Delta");
+        System.out.println("Index of 'Delta': " + indexOfDelta);
     }
 }
