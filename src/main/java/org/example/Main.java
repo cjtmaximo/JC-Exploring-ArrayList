@@ -1,17 +1,19 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Exercise 1: Creating an `ArrayList` and Adding Elements (`add`)
+        ArrayList<String> missionTasks = new ArrayList<>();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Is the list empty initially? " + missionTasks.isEmpty());
+
+        missionTasks.add("Secure the perimeter");
+        missionTasks.add("Establish communication");
+        missionTasks.add("Report status");
+
+        System.out.println("Current tasks: " + missionTasks);
+        System.out.println("Number of tasks: " + missionTasks.size());
     }
 }
